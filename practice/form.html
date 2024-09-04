@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <h2>Html Form</h2>
+
+    <form action="formSubmit.php" method="post">
+        <label for="fname">First name: </label>
+        <input type="text" name="fname"><br>
+        <label for="lname">Last name: </label>
+        <input type="text" name="lname"><br>
+
+        <!-- dropdown -->
+        <label for="country">Country</label>
+        <select name="countries">
+            <option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="Japan">Japan</option>
+        </select><br>
+
+        <!-- radio-button -->
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female<br>
+
+        <!-- Check-box -->
+         <label for="colour">Colour</label>
+         <input type="checkbox" name="colour[]" value="red">Red
+         <input type="checkbox" name="colour[]" value="blue">Blue   
+         <input type="checkbox" name="colour[]" value="green">Green<br>
+
+
+         <input type="submit">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search Catalog</title>
+</head>
+<body>
+    <h1>Book Search Catalog</h1>
+    <form action="process_form.php" method="POST">
+        <label for="searchType">Search by:</label>
+        <select name="searchType" id="searchType">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="isbn">ISBN</option>
+        </select>
+        <br><br>
+        
+        <label for="keyword">Keyword:</label>
+        <input type="text" name="keyword" id="keyword" required>
+        <br><br>
+        
+        <label for="download">Downloadable:</label>
+        <input type="radio" name="download" value="1" id="downloadTrue" checked> Yes
+        <input type="radio" name="download" value="0" id="downloadFalse"> No
+        <br><br>
+        
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
